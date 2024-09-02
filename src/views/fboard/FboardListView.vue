@@ -10,6 +10,7 @@
       v-model:title="params.title_like"
       :limit="params._limit"
       @update:limit="changeLimit"
+      :selectOptions="selectOptions"
     />
 
     <hr class="my-4" />
@@ -36,7 +37,6 @@ import PostFilter from '@/components/posts/PostFilter.vue';
 import DataTable from '@/components/tables/DataTable.vue';
 import AppPagination from '@/components/app/AppPagination.vue';
 import { useRouter } from 'vue-router';
-//import { getFboard } from '@/api/posts';
 import { useAxios } from '@/hooks/useAxios';
 import { computed, ref } from 'vue';
 
@@ -45,7 +45,7 @@ const params = ref({
   _sort: 'createdAt',
   _order: 'desc',
   _page: 1,
-  _limit: 6,
+  _limit: 10,
   title_like: '',
 });
 
@@ -67,6 +67,13 @@ const goCreatePost = () => {
     name: 'FboardCreate',
   });
 };
+
+// selectOptions 정의
+const selectOptions = [
+  { value: '10', label: '10개씩 보기' },
+  { value: '15', label: '15개씩 보기' },
+  { value: '20', label: '20개씩 보기' },
+];
 </script>
 
 <style scoped>

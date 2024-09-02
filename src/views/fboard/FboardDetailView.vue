@@ -4,6 +4,7 @@
   <div v-else>
     <div>
       <h3 class="mb-5">{{ fboard.title }}</h3>
+      <p class="hit-num">조회수: {{ fboard.hit }}</p>
       <p>id: {{ props.id }}</p>
       <p>{{ fboard.content }}</p>
       <p>{{ $dayjs(fboard.createdAt).format('YYYY. MM. DD HH:mm:ss') }}</p>
@@ -93,4 +94,9 @@ const goEditPage = () => {
 };
 </script>
 
-<style lang="scss" scoped></style>
+<style>
+.hit-num {
+  color: #3e51ff;
+  font-weight: bold;
+}
+</style>

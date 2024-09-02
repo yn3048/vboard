@@ -12,10 +12,14 @@
           aria-describedby="emailHelp"
         />
       </div>
-      <div class="mb-3">
+      <div class="mb-3 password-input">
         <label class="form-label">Password</label>
-        <input type="password" placeholder="비밀번호를 입력하세요" class="form-control" />
-        <i class="fa fa-eye fa-lg"></i>
+        <input
+          :type="isShow ? 'password' : 'text'"
+          placeholder="비밀번호를 입력하세요"
+          class="form-control"
+        />
+        <i :class="isShow ? 'bi-eye-slash' : 'bi-eye'" @click="toggleShow"></i>
       </div>
       <div class="login-btn">
         <button class="btn btn-dark mx-2">
@@ -27,7 +31,15 @@
   </div>
 </template>
 
-<script setup></script>
+<script setup>
+import { ref } from 'vue';
+
+const isShow = ref(true);
+
+const toggleShow = () => {
+  isShow.value = !isShow.value;
+};
+</script>
 
 <style scoped>
 .login-form {
@@ -43,5 +55,15 @@
 .register {
   color: #fff;
   text-decoration: none;
+}
+
+.password-input {
+  position: relative;
+}
+
+.password-input > i {
+  position: absolute;
+  right: 2%;
+  top: 55%;
 }
 </style>

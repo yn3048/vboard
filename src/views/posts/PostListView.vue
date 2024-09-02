@@ -10,6 +10,7 @@
       v-model:title="params.title_like"
       :limit="params._limit"
       @update:limit="changeLimit"
+      :selectOptions="selectOptions"
     />
 
     <hr class="my-4" />
@@ -129,6 +130,13 @@ const openModal = ({ title, content, createdAt }) => {
   modalContent.value = content;
   modalCreatedAt.value = createdAt;
 };
+
+// selectOptions 정의
+const selectOptions = [
+  { value: '6', label: '6개씩 보기' },
+  { value: '12', label: '12개씩 보기' },
+  { value: '18', label: '18개씩 보기' },
+];
 </script>
 
 <style scoped>

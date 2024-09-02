@@ -53,7 +53,7 @@ const { error, loading, execute } = useAxios(
 );
 
 const save = async () => {
-  execute({ ...form.value, createdAt: Date.now() });
+  execute({ ...form.value, createdAt: Date.now(), hit: 0 });
 };
 
 const router = useRouter();

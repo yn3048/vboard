@@ -16,9 +16,9 @@
           @input="$emit('update:limit', $event.target.value)"
           class="form-select"
         >
-          <option value="6">6개씩 보기</option>
-          <option value="12">12개씩 보기</option>
-          <option value="18">18개씩 보기</option>
+          <option v-for="option in selectOptions" :key="option.value" :value="option.value">
+            {{ option.label }}
+          </option>
         </select>
       </div>
     </div>
@@ -29,6 +29,10 @@
 defineProps({
   title: String,
   limit: Number,
+  selectOptions: {
+    type: Array,
+    default: () => [{ value: '', label: '' }],
+  },
 });
 const emit = defineEmits(['update : title', 'update: limit']);
 const changeTitle = (event) => {
