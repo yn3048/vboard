@@ -15,11 +15,11 @@
       <div class="mb-3 password-input">
         <label class="form-label">Password</label>
         <input
-          :type="isShow ? 'password' : 'text'"
+          :type="isShow ? 'text' : 'password'"
           placeholder="비밀번호를 입력하세요"
           class="form-control"
         />
-        <i :class="isShow ? 'bi-eye-slash' : 'bi-eye'" @click="toggleShow"></i>
+        <i :class="isShow ? 'bi-eye' : 'bi-eye-slash'" @click="toggleShow"></i>
       </div>
       <div class="login-btn">
         <button class="btn btn-dark mx-2">
@@ -34,7 +34,7 @@
 <script setup>
 import { ref } from 'vue';
 
-const isShow = ref(true);
+const isShow = ref(false);
 
 const toggleShow = () => {
   isShow.value = !isShow.value;
