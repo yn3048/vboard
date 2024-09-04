@@ -28,6 +28,7 @@ export const useAxios = (url, config = {}, options = {}) => {
     data.value = null;
     error.value = null;
     loading.value = true;
+    //unref(url)
     axios(unref(url), {
       ...defaultConfig,
       ...config,

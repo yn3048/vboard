@@ -1,6 +1,4 @@
-# vboard2
-
-vue3 게시판 복습✨
+# vboard
 
 This template should help get you started developing with Vue 3 in Vite.
 

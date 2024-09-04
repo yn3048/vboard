@@ -14,7 +14,9 @@
         <slot :item="item" :index="index">
           <th scope="row">{{ item.id }}</th>
           <td class="td-title">{{ item.title }}</td>
-          <td class="td-content">{{ item.content }}</td>
+          <td class="td-content">
+            {{ item.content }} <span class="comment-count">[{{ item.commentCount }}]</span>
+          </td>
           <td class="td-createdAt">{{ formatDate(item.createdAt) }}</td>
           <td class="td-hit">{{ item.hit }}</td>
         </slot>
@@ -93,5 +95,9 @@ const handelItemClick = async (item) => {
   overflow: hidden;
   text-overflow: ellipsis;
   white-space: nowrap;
+}
+.comment-count {
+  color: tomato;
+  font-weight: bold;
 }
 </style>

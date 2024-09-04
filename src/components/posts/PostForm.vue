@@ -4,6 +4,7 @@
       <label for="title" class="form-label">제목</label>
       <!-- v-focus -->
       <input
+        required
         v-focus
         v-color="['royalblue', 'bold']"
         :value="title"
@@ -16,6 +17,7 @@
     <div class="mb-3">
       <label for="content" class="form-label">내용</label>
       <textarea
+        required
         :value="content"
         @input="$emit('update:content', $event.target.value)"
         id="content"
@@ -30,11 +32,6 @@
 </template>
 
 <script setup>
-// const vFocus = {
-//   mounted: (el) => {
-//     el.focus();
-//   },
-// };
 defineProps({
   title: String,
   content: String,

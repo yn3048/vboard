@@ -18,7 +18,13 @@
     <AppLoading v-if="loading" />
     <AppError v-else-if="error" :message="error.message" />
 
-    <DataTable :items="fboard"> </DataTable>
+    <template v-else-if="!isExist">
+      <p class="text-center py-5 text-muted">No Results😥</p>
+    </template>
+
+    <template v-else>
+      <DataTable :items="addFboard"> </DataTable>
+    </template>
 
     <AppPagination
       :current-page="params._page"
@@ -54,10 +60,28 @@ const changeLimit = (value) => {
   params.value._page = 1;
 };
 
-// 게시판 목록 불러오기
-const { response, data: fboard, error, loading } = useAxios('/fboard', { params });
+// 게시판 목록, 댓글 목록 불러오기
+const { response: fboardResponse, data: fboard, error, loading } = useAxios('/fboard', { params });
+const { data: comments } = useAxios('/comments');
 
-const totalCount = computed(() => response.value?.headers?.['x-total-count'] || 0);
+// 각 게시글에 댓글 수 추가
+const addFboard = computed(() => {
+  if (!fboard.value || !comments.value) return [];
+
+  return fboard.value.map((fboard) => {
+    const commentCount = comments.value.filter(
+      (comment) => Number(comment.postId) === Number(fboard.id),
+    ).length;
+    return {
+      ...fboard,
+      commentCount,
+    };
+  });
+});
+
+const isExist = computed(() => addFboard.value && addFboard.value.length > 0);
+
+const totalCount = computed(() => fboardResponse.value?.headers?.['x-total-count'] || 0);
 const pageCount = computed(() => Math.ceil(totalCount.value / params.value._limit));
 
 const router = useRouter();
