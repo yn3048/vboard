@@ -24,7 +24,6 @@ import { ref } from 'vue';
 import { useRouter } from 'vue-router';
 import { useAxios } from '@/hooks/useAxios';
 import { useAlert } from '@/composables/alert';
-//import { createFboard } from '@/api/posts';
 
 const { vAlert, vSuccess } = useAlert();
 

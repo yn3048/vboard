@@ -132,42 +132,42 @@
       "title": "test3 수정 테스트!!",
       "content": "333 g@@$$###",
       "createdAt": 1723896517190,
-      "hit": 0,
+      "hit": 2,
       "id": 3
     },
     {
       "title": "test4!!",
       "content": "4 번글!!@@@@@@@@@",
       "createdAt": 1724896617190,
-      "hit": 0,
+      "hit": 1,
       "id": 4
     },
     {
       "title": "test5",
       "content": "55 g@@$$###",
       "createdAt": 1724896777190,
-      "hit": 0,
+      "hit": 1,
       "id": 5
     },
     {
       "title": "test6",
       "content": "6 g@@$$###",
       "createdAt": 1724896997190,
-      "hit": 0,
+      "hit": 1,
       "id": 6
     },
     {
       "title": "테스트",
       "content": "되나되나??",
       "createdAt": 1724919916324,
-      "hit": 0,
+      "hit": 1,
       "id": 7
     },
     {
       "title": "오!_!_!_!_!🐰",
       "content": "글쓰기 테스트🐰🐰",
       "createdAt": 1724919954519,
-      "hit": 0,
+      "hit": 1,
       "id": 8
     },
     {
@@ -181,14 +181,14 @@
       "title": "안녕!!~",
       "content": "안녕하세요 ㅎ_ㅎ✨✨",
       "createdAt": 1724923002984,
-      "hit": 0,
+      "hit": 1,
       "id": 11
     },
     {
       "title": "글등록!✨",
       "content": "되나되낭???🐰",
       "createdAt": 1724978760115,
-      "hit": 1,
+      "hit": 3,
       "id": 13
     },
     {
@@ -202,21 +202,21 @@
       "title": "글등록 테스트!!!",
       "content": "테스트",
       "createdAt": 1724990648925,
-      "hit": 1,
+      "hit": 2,
       "id": 16
     },
     {
       "title": "글글글",
       "content": "테스트@@@@",
       "createdAt": 1724994040599,
-      "hit": 1,
+      "hit": 2,
       "id": 17
     },
     {
       "title": "긴제목 테스트!@@@@길다길어!@@@길어길어 긴제목 테스트!",
       "content": "긴제목 말줄임 기능 추가해볼까?!??!?!?긴제목 말줄임 기능 추가해볼까?!??!?!?",
       "createdAt": 1724998160526,
-      "hit": 3,
+      "hit": 4,
       "id": 18
     },
     {
@@ -237,7 +237,7 @@
       "title": "@@@",
       "content": "!!",
       "createdAt": 1725351866357,
-      "hit": 5,
+      "hit": 6,
       "id": 36
     },
     {
@@ -251,7 +251,7 @@
       "title": "글!@@",
       "content": "ㄱ",
       "createdAt": 1725410447334,
-      "hit": 5,
+      "hit": 6,
       "id": 40
     },
     {
@@ -272,21 +272,21 @@
       "title": "자유게시판",
       "content": "테스트~!!@!",
       "createdAt": 1725418756991,
-      "hit": 6,
+      "hit": 7,
       "id": 43
     },
     {
       "title": "녹아내려요",
       "content": "@@스르륵 녹아내려요@",
       "createdAt": 1725418774403,
-      "hit": 20,
+      "hit": 21,
       "id": 44
     },
     {
       "title": "dd",
       "content": "dd",
       "createdAt": 1725425347985,
-      "hit": 9,
+      "hit": 10,
       "id": 45
     },
     {
@@ -300,15 +300,36 @@
       "title": "ㅎㅎㅎㅎ",
       "content": "ㅎㅎ@@",
       "createdAt": 1725435004235,
-      "hit": 10,
+      "hit": 12,
       "id": 47
     },
     {
       "title": "ㅇㅎㅎㅎㅎ",
       "content": "ㅎㅎㅎ",
       "createdAt": 1725435238318,
-      "hit": 19,
+      "hit": 20,
       "id": 48
+    },
+    {
+      "title": "글 등록 테스트@@!!!",
+      "content": "얍얍!!",
+      "createdAt": 1725494592286,
+      "hit": 7,
+      "id": 49
+    },
+    {
+      "title": "ㅇㅇ",
+      "content": "ㅇㅇ!!!!",
+      "createdAt": 1725509793364,
+      "hit": 5,
+      "id": 50
+    },
+    {
+      "title": "Monster",
+      "content": "@@_@_@_@",
+      "createdAt": 1725509956588,
+      "hit": 3,
+      "id": 51
     }
   ],
   "comments": [
@@ -503,6 +524,144 @@
       "postId": "48",
       "createdAt": 1725441017420,
       "id": 45
+    },
+    {
+      "content": "댓글!!",
+      "postId": "47",
+      "createdAt": 1725494527221,
+      "id": 46
+    },
+    {
+      "content": "댓글@_@",
+      "postId": "44",
+      "createdAt": 1725494538122,
+      "id": 47
+    },
+    {
+      "content": "ㅎㅎㅎㅎㅎㅎㅎㅎㅎㅎ",
+      "postId": "45",
+      "createdAt": 1725494544420,
+      "id": 48
+    },
+    {
+      "content": "댓글✨",
+      "postId": "49",
+      "createdAt": 1725494600916,
+      "id": 49
+    },
+    {
+      "content": "ㅎ_ㅎ",
+      "postId": "49",
+      "createdAt": 1725494610760,
+      "id": 50
+    },
+    {
+      "content": "ggggggggggg",
+      "postId": "43",
+      "createdAt": 1725497165878,
+      "id": 51
+    },
+    {
+      "content": "ggggg",
+      "postId": "3",
+      "createdAt": 1725497180340,
+      "id": 52
+    },
+    {
+      "content": "dddddddddd",
+      "postId": "49",
+      "createdAt": 1725497199458,
+      "id": 53
+    },
+    {
+      "content": "ggg",
+      "postId": "11",
+      "createdAt": 1725498705559,
+      "id": 54
+    },
+    {
+      "content": "ggg",
+      "postId": "36",
+      "createdAt": 1725498761981,
+      "id": 55
+    },
+    {
+      "content": "dd",
+      "postId": "36",
+      "createdAt": 1725498763577,
+      "id": 56
+    },
+    {
+      "content": "ggg",
+      "postId": "17",
+      "createdAt": 1725498770879,
+      "id": 57
+    },
+    {
+      "content": "@@",
+      "postId": "17",
+      "createdAt": 1725498772679,
+      "id": 58
+    },
+    {
+      "content": "ggggggggggggg!!!!!!!!!",
+      "postId": "13",
+      "createdAt": 1725498778665,
+      "id": 59
+    },
+    {
+      "content": "ddggdd",
+      "postId": "13",
+      "createdAt": 1725498780269,
+      "id": 60
+    },
+    {
+      "content": "zzz",
+      "postId": "13",
+      "createdAt": 1725498781977,
+      "id": 61
+    },
+    {
+      "content": "gddd",
+      "postId": "3",
+      "createdAt": 1725498828827,
+      "id": 62
+    },
+    {
+      "content": "ㅎㅎ",
+      "postId": "50",
+      "createdAt": 1725509800182,
+      "id": 63
+    },
+    {
+      "content": "!!",
+      "postId": "50",
+      "createdAt": 1725509801740,
+      "id": 64
+    },
+    {
+      "content": "ㅋㅋㅋㅋㅋㅋ",
+      "postId": "50",
+      "createdAt": 1725509806992,
+      "id": 65
+    },
+    {
+      "content": "ㅇㅇ",
+      "postId": "51",
+      "createdAt": 1725509960406,
+      "id": 66
+    },
+    {
+      "content": "ㅎㅎㅎ",
+      "postId": "51",
+      "createdAt": 1725509962459,
+      "id": 67
+    },
+    {
+      "content": "댓글!_!",
+      "postId": "50",
+      "createdAt": 1725611331539,
+      "id": 68
     }
   ]
 }

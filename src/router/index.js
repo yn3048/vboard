@@ -64,6 +64,10 @@ const routes = [
   },
   {
     path: '/:pathMatch(.*)*',
+    redirect: '/404',
+  },
+  {
+    path: '/404',
     name: 'NotFound',
     component: NotFoundView,
   },
@@ -119,7 +123,7 @@ const routes = [
     path: '/fboard/:id',
     name: 'FboardDetail',
     component: FboardDetailView,
-    // ✨path의 id 파라미터가 해당 페이지 컴포넌트의 props로 전달됨, 선언 안 할 경우 props 값 안넘어옴!!!!
+    // path의 id 파라미터가 해당 페이지 컴포넌트의 props로 전달됨, 선언 안 할 경우 props 값 안넘어옴!!!!
     props: true,
   },
   {
@@ -141,14 +145,15 @@ const router = createRouter({
   routes,
 });
 
+// 네비게이션 가드
 // router.beforeEach((to, from) => {
 //   console.log('to: ', to);
 //   console.log('from: ', from);
-//   if (to.name === 'MyPage') {
+//   if (to.name === 'PostList') {
 //     // router.push({ name: 'Home' });
 //     // return false;
 //     //return { name: 'Home' };
-//     return '/posts';
+//     return '/';
 //   }
 // });
 
